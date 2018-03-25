@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1516725949 source:d:\c++ projekty\niezawodnosc3\main.cpp
+	<iostream>
+	<iomanip>
+	<fstream>
+	<sstream>
+	<cstring>
+	<cstdlib>
+	<conio.h>
+	<string>
+	<limits>
+

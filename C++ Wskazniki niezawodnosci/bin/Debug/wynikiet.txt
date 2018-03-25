@@ -1,0 +1,13 @@
+Liczba zbadanych elementów: 35
+Elementy uszkodzone w chwili t=1: 0
+Elementy uszkodzone w chwili t=2: 3
+Elementy uszkodzone w chwili t=3: 3
+Elementy uszkodzone w chwili t=4: 5
+Elementy uszkodzone w chwili t=5: 8
+Elementy uszkodzone w chwili t=6: 7
+Elementy uszkodzone w chwili t=7: 6
+Elementy uszkodzone w chwili t=8: 2
+Elementy uszkodzone w chwili t=9: 1
+Elementy uszkodzone w chwili t=10: 0
+
+ET = 4.25714
