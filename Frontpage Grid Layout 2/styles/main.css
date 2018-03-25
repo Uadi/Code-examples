@@ -1,0 +1,125 @@
+body {
+	background: #e6e8e1;
+	margin: 0;
+	font-family: 'Slabo 27px', serif;
+	line-height: 1.7;
+	display:grid;
+
+/*deklaracja siatki*/
+/*	grid-template-rows: 8em 40vh 1fr 8em;*/
+	grid-template-rows: 20vh 80vh auto 20vh;
+/*	grid-template-columns: 1fr 5fr 2fr 1fr;*/
+	grid-template-columns: 1fr  minmax(10em,2fr) minmax(20em,5fr) 1fr;
+
+/*wyznaczenie obszarow*/
+	grid-template-areas: 
+	"header header header header"
+	"banner banner banner banner"
+	". sidebar main ."
+	"footer footer footer footer";
+	grid-gap: 1em;
+}
+
+header, footer {
+	background-image: url(../img/hands.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	background: #373331;*/
+	color: #e6e8e1;
+	display:flex;
+	justify-content: center; /*wyrownanie*/
+	align-items: center;
+}
+
+.header-title, .footer-title {
+	font-family: 'Sacramento', cursive;
+	text-shadow: 1px 1px 2px black;
+	font-size: 3em;
+}
+
+/*podzial na obszary*/
+
+header {
+	grid-area: header;
+}
+
+.banner {
+	grid-area: banner;
+	background-image: url(../img/bread.jpeg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 100%;
+	display: flex;
+	flex-flow: column wrap; /*jedno pod drugim*/
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-title {
+	color: white;
+	font-size: 3em;
+	margin: 0;
+}
+
+.banner-subtitle {
+	color: white;
+	font-family: 'Sacramento', cursive;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+main {
+	grid-area: main;
+}
+
+aside {
+	margin: 0;
+	grid-area: sidebar;
+	background-color: #f4f4f4;
+	padding: 1.5em;
+	text-align: justify;
+}
+
+footer {
+	grid-area: footer;
+}
+
+
+.art {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 1em;
+	padding: 1.5em;
+	text-align: justify;
+	background: #f4f4f4;
+	display:grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: min-content 1fr;
+	grid-template-areas:
+	"img title"
+	"img content";
+
+	grid-column-gap: 1em; /*przerwa miedzy kolumnami*/
+}
+
+.art-img {
+	grid-area: img;
+	max-width: 100%;
+}
+
+.art-title {
+	margin: 0;
+	grid-area: title;
+	font-weigth: 300;
+}
+
+.art-content {
+	margin: 0;
+	grid-area: content;
+}
+
+.art-content a{
+	color: #d18040;
+}
