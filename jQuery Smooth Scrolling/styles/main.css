@@ -1,0 +1,25 @@
+body {
+  padding-top: 50px;
+}
+
+.hero {
+  padding: 20vh 0;
+  background: #FFAC00FF;
+}
+
+.content-light {
+  padding: 10vh 0;
+  background: #CCC;
+  color: #232323;
+}
+
+.content-dark {
+  padding: 10vh 0;
+  background: #232323;
+  color: white;
+}
+@media (min-width: 768px) {
+  .content-light, .content-dark {
+    padding: 20vh 0;
+  }
+}
